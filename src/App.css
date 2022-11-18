@@ -23,8 +23,8 @@ body{
   background-color:#F7F7F7;
 }
 .product{
-  width: 15rem;
-  height:15rem;
+  width: 16rem;
+  height:auto;
   
   border-radius: 10px;
   display: flex; 
@@ -35,14 +35,14 @@ body{
 
 }
 .product:hover{
-  transform: rotate3d(1, 2, 3, -10deg);
+  /* transform: rotate3d(1, 2, 3, -10deg); */
   background-color: rgb(234,238,242);
   cursor: pointer;
  
 }
 .product:hover  .hover{
  display: flex;
- justify-content: space-evenly;
+ justify-content: space-around;
  
 }
 .imagecontainer{
@@ -67,6 +67,8 @@ body{
 }
 .hover{
   display: none;
+  color:blue;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 .hover i{
