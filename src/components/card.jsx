@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function card() {
+export default function Card(props) {
+    const{data}=props
   return (
     <div class="product">
             <div class="imagecontainer">
@@ -9,12 +10,12 @@ export default function card() {
                     <i class="fa fa-eye"></i>
                 </div>
                 <div class="image">
-                    <img src="acentChair.jpg"/>
+                    <img src={data.image}/>
                 </div>
 
             </div>
             <div class="productname">
-                green wood chair
+                {data.title}
             </div>
             </div>
   )
