@@ -3,6 +3,7 @@ import './App.css';
 import{useEffect, useState} from "react"
 import Cardcontainer from './components/Cardcontainer';
 import CartContainer from './components/Cartcomponents/CartContainer';
+import {BrowserRouter,Route,Routes} from "react-router-dom"
 function App() {
   const[data,setdata]=useState([])
   const[cart,setCart]=useState([])
@@ -14,11 +15,16 @@ function App() {
   console.log(cart)
 
   return (
-    <div className="App">
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Cardcontainer data={data} setCart={setCart} cart={cart}/>}/>
+      <Route path="/mycart" element={<CartContainer data={cart}/>}/>
+    </Routes>
+    </BrowserRouter>
       
-      <Cardcontainer data={data} setCart={setCart} cart={cart}/>
-      <CartContainer data={cart}/>
-    </div>
+      
+      
+    
   );
 }
 
