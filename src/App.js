@@ -1,7 +1,7 @@
 
 import './App.css';
 import{useEffect, useState} from "react"
-import Cardcontainer from './components/Cardcontainer';
+import Cardcontainer from './components/CardComponents/Cardcontainer';
 import CartContainer from './components/Cartcomponents/CartContainer';
 import {BrowserRouter,Route,Routes} from "react-router-dom"
 function App() {
