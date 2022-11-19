@@ -1,7 +1,7 @@
 
 import './App.css';
 import{useEffect, useState} from "react"
-import Card from './components/card';
+import Cardcontainer from './components/Cardcontainer';
 function App() {
   const[data,setdata]=useState([])
   useEffect(()=>{
@@ -13,12 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className='container'>
-        {data.map(x=>{
-          return(<Card data={x}/>)
-        })}
-      </div>
       
+      <Cardcontainer data={data}/>
     </div>
   );
 }

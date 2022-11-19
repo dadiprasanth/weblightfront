@@ -16,7 +16,7 @@ export default function Card(props) {
             </div>
             <div class="hover">
                 <span>${data.price}</span>
-                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <i id="cart" className="fa fa-cart-plus" aria-hidden="true"></i>
                 
                 </div>
             <div class="productname">

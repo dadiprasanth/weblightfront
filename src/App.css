@@ -43,6 +43,7 @@ body{
 .product:hover  .hover{
  display: flex;
  justify-content: space-around;
+ margin-top: 2px;
  
 }
 .imagecontainer{
@@ -70,8 +71,12 @@ body{
   color:blue;
   font-family: Arial, Helvetica, sans-serif;
   
+  
 }
 .hover i{
-  color:#ccc
+  color:#cccc;
 }
 
+#cart:hover{
+  box-shadow: 5px 5px 8px #8888;
+}
