@@ -1,7 +1,8 @@
 import React from 'react'
+import Cardcontainer from './Cardcontainer'
 
 export default function Card(props) {
-    const{data}=props
+    const{data,setCart,cart}=props
   return (
     <div class="product">
             <div class="imagecontainer">
@@ -16,7 +17,7 @@ export default function Card(props) {
             </div>
             <div class="hover">
                 <span>${data.price}</span>
-                <i id="cart" className="fa fa-cart-plus" aria-hidden="true"></i>
+                <i onClick={()=>setCart([...cart,data])} id="cart" className="fa fa-cart-plus" aria-hidden="true"></i>
                 
                 </div>
             <div class="productname">

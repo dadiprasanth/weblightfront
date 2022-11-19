@@ -1,0 +1,18 @@
+.CartContainer{
+    display: grid;
+    row-gap: 20px;
+}
+.Cartcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+}
+.CartImage{
+    height: 40px;
+    width: 40px;
+}
+.Cartcard img{
+    height:100%;
+    width: 100%;
+}

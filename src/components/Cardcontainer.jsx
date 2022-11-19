@@ -5,7 +5,7 @@ export default function Cardcontainer(props) {
     const[query,setQuery]=useState("")
     const[price,setPrice]=useState(0)
     // const[finalData,setFinalData]=useState([])
-    const{data}=props
+    const{data,setCart,cart}=props
     const serving=data.filter(x=>x.category.includes(query))
     const finalData=serving.filter(x=>x.price>=price)
   return (
@@ -23,7 +23,7 @@ export default function Cardcontainer(props) {
     </div>
     <div className='container'>
         {finalData.map(x=>{
-          return(<Card data={x}/>)
+          return(<Card data={x} setCart={setCart} cart={cart}/>)
         })}
       </div>
       </>
